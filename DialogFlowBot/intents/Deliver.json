@@ -1,0 +1,58 @@
+{
+  "id": "e3a32178-caa1-4747-915a-d1d725e32db0",
+  "name": "Deliver",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Yes we Do! Click the following to order from foodpanda.",
+            "We certainly do, click link below to order and deliver to your home."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "link": "https://www.foodpanda.my/restaurant/qers/papas-pizza/",
+                  "type": "button",
+                  "icon": {
+                    "type": "link",
+                    "color": "#A569BD"
+                  },
+                  "text": "Order Here"
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

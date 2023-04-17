@@ -1,0 +1,209 @@
+{
+  "id": "1c2faab9-3c88-41e1-bf5b-3aa607d628c2",
+  "name": "Booking",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0cf7ac0b-5a8c-46d4-931b-f42f4ee17405",
+          "name": "guests",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$guests",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "How many guests are coming?"
+            },
+            {
+              "lang": "en",
+              "value": "For how many guests?"
+            },
+            {
+              "lang": "en",
+              "value": "How many people are coming?"
+            },
+            {
+              "lang": "en",
+              "value": "What is the number of guests?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "34be7d71-a9ad-47e5-85bb-6b59cb38982c",
+          "name": "date",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$date",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Can you tell me the date you wish to reserve for?"
+            },
+            {
+              "lang": "en",
+              "value": "At what date?"
+            },
+            {
+              "lang": "en",
+              "value": "which date would you like to reserve for?"
+            },
+            {
+              "lang": "en",
+              "value": "Which date would you like to book for?"
+            },
+            {
+              "lang": "en",
+              "value": "Can you tell me the date you wish to book for?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "0ede94a5-353a-4287-bd06-4e000fea5cec",
+          "name": "time",
+          "required": true,
+          "dataType": "@sys.time",
+          "value": "$time",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what time do you what to book for?"
+            },
+            {
+              "lang": "en",
+              "value": "What time do you want to reserve for"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "99ad1ab7-b43b-4f99-ab9f-38af16e8c5a7",
+          "name": "name",
+          "required": true,
+          "dataType": "@sys.person",
+          "value": "$name",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "To confirm your reservation for $date we will need your name, email and phone number to contact you about your confirmation."
+            },
+            {
+              "lang": "en",
+              "value": "To confirm your booking for $date we will need your name, email and phone number to contact you about your confirmation."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8cf58ea5-a82b-40a3-a1f4-ee4808bc5e54",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your email address?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "03354051-d69f-4549-bd7c-d835e22ec047",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your phone number?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "You have successfully booked a table for $guests guests for $date original $time original",
+            "Booking Confirmed for $guests guests for $date at $time",
+            "Your booking was made for $guests for $date at $time"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "See you at the restaurant soon $name",
+            "We cant wait to have you at our restaurant $name"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Have a wonderful day!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
